@@ -501,6 +501,7 @@ void USART_IRQHandling(USART_Handle_t *pUSARTHandle)
 				}
 				else
 				{
+					/* 8-bit */
 					pUSARTHandle->pUSARTx->DR = (*pUSARTHandle->pTxBuffer & (uint8_t)0xFF);
 					pUSARTHandle->pTxBuffer++;
 					pUSARTHandle->TxLen--;
