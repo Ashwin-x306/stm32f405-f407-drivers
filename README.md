@@ -133,17 +133,26 @@ STM32F405-F407-Drivers/
 │   │   ├── stm32f405xxx_spi_driver.h
 │   │   ├── stm32f405xxx_i2c_driver.h
 │   │   ├── stm32f405xxx_adc_driver.h
-│   │   └── stm32f405xxx_usart_driver.h
+│   │   ├── stm32f405xxx_usart_driver.h
+│   │   └── sys_clock.h
 │   │
 │   └── Src/
 │       ├── stm32f405xxx_gpio_driver.c
 │       ├── stm32f405xxx_spi_driver.c
 │       ├── stm32f405xxx_i2c_driver.c
 │       ├── stm32f405xxx_adc_driver.c
-│       └── stm32f405xxx_usart_driver.c
+│       ├── stm32f405xxx_usart_driver.c
+│       └── sys_clock.c
 │
 ├── Startup/
+│   └── startup_stm32f407xx.s
 │
-├
 │
-└── README.md
+├── Linker/
+│   ├── STM32F407VGTX_FLASH.ld
+│   └── STM32F407VGTX_RAM.ld
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── CMakeLists.txt
